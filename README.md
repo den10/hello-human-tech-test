@@ -38,3 +38,7 @@ Roughly 2 hours
 - Apollo Client
 - TypeScript
 - Tailwind
+
+## If I had more time...
+
+- Added Playwright/Cypress integrated tests
