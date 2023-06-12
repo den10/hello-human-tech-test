@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Route } from "wouter";
+import { TopNav } from "./components/top-nav";
+import { AppRoute } from "./configs/routes";
+import { HomePage } from "./pages/home";
+import { MovieDetail } from "./pages/movie-detail";
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex flex-col h-full min-h-screen">
+      <TopNav />
+
+      <div className="flex relative flex-col flex-1 w-full mt-32 mx-auto sm:mb-12">
+        <Route path={AppRoute.Home} component={HomePage} />
+        <Route path={AppRoute.MovieDetail}>
+          {({ movieId }) => <MovieDetail movieId={movieId} />}
+        </Route>
+      </div>
     </div>
   );
-}
-
-export default App;
+};

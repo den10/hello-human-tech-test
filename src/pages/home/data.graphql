@@ -1,0 +1,13 @@
+query GetTomCruise($id: ID!) {
+  person(id: $id) {
+    id
+    name
+    cast {
+      id
+      release_date
+      poster_path
+      original_title
+      vote_average
+    }
+  }
+}

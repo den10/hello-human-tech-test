@@ -1,0 +1,14 @@
+query SearchMovies($query: String!, $page: Int) {
+  searchMovies(query: $query, page: $page) {
+    page
+    total_results
+    total_pages
+    results {
+      id
+      release_date
+      poster_path
+      original_title
+      vote_average
+    }
+  }
+}

@@ -1,0 +1,14 @@
+overwrite: true
+schema: "https://tmdb-one-blue.vercel.app/graphql"
+documents: "src/**/*.graphql"
+generates:
+  src/typed/index.ts:
+    plugins:
+      - "add":
+          "content": "/* eslint-disable */"
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
+    config:
+      namingConvention:
+        numValues: "keep"

@@ -1,46 +1,40 @@
-# Getting Started with Create React App
+# The Movie Test, aka Cruise Strikes Back
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Cruisey](https://media.giphy.com/media/D16XHdsB1PBxm/giphy.gif)
 
-## Available Scripts
+## The Scenario
 
-In the project directory, you can run:
+John Johnson hosts a weekly movie event with his local Tom Cruise Fan club called "John Johnsons Cruisey Movie Monday". He's asked you to build a website where he can either search for a specific movie or display a list of Tom Cruise's movies for his audience to select from.
 
-### `npm start`
+## To do
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Read the above for what's needed
+2. Setup your react project. Feel free to pick the tools you'd want to use
+3. Build a search component that connects to https://tmdb-one-blue.vercel.app/ and can either search for a specific movie or display a list to match the criteria above
+4. Push source code to this repo
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Tech details
 
-### `npm test`
+- GraphQL Endpoint: https://tmdb-one-blue.vercel.app/
+- GraphQL Playground: https://www.graphqlbin.com/v2/new (enter endpoint above)
+- Images path: https://image.tmdb.org/t/p/w500/
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### If you encounter issues with the schema above
 
-### `npm run build`
+Sometimes the endpoint above may encounter timeout issues set by the Movie Database if too many queries are hit at once, please let us know if you encounter any problems
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This message will self destruct in Five seconds
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Total time taken
 
-### `npm run eject`
+Roughly 2 hours
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Tech stack
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- React
+- GraphQL + Codegen
+- Apollo Client
+- TypeScript
+- Tailwind

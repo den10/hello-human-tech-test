@@ -1,0 +1,27 @@
+query GetMovie($id: ID!) {
+  movie(id: $id) {
+    id
+    name
+    original_title
+    overview
+    poster_path
+    release_date
+    backdrop_path
+    runtime
+    vote_average
+    credits {
+      crew {
+        name
+        job
+        profile_path
+      }
+      cast {
+        character
+        person {
+          name
+          profile_path
+        }
+      }
+    }
+  }
+}
