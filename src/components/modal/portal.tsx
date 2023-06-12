@@ -55,7 +55,7 @@ export const Portal: FC<PortalProps> = ({ children, className, id, isPortalOpen 
         element.classList.remove("opacity-100");
       }
     }
-  }, [isPortalOpen]);
+  }, [isPortalOpen, id]);
 
   if (!isPortalOpen || !portalElement) {
     return null;
